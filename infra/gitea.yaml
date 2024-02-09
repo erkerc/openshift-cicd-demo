@@ -123,6 +123,10 @@ metadata:
 spec:
   to:
     name: gitea
+    kind: Service
+    weight: 100
+  tls: 
+    termination: edge
 ---
 apiVersion: apps/v1
 kind: Deployment
